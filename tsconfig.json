@@ -1,0 +1,19 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "typeRoots": [
+      "./node_modules/@figma",
+      "./node_modules/@types"
+    ],
+    "target": "es6",
+    "jsx": "react",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "lib": ["es6", "dom"]
+  }
+}
