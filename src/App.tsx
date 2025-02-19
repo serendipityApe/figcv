@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { ChangeEvent, useState } from "react";
 import "./App.css";
 
-export function App() {
+export default function App() {
   const [count, setCount] = useState(0);
 
-  function handleOnChange(event: Event) {
+  function handleOnChange(event: ChangeEvent<HTMLInputElement>) {
     const target = event.target as HTMLInputElement;
 
     setCount(parseInt(target?.value));
