@@ -12,7 +12,7 @@ export default function App() {
 
   function handleCreate() {
     parent.postMessage(
-      { pluginMessage: { type: "create-shapes", count } },
+      { pluginMessage: { type: "create-resume", count } },
       "*"
     );
   }
